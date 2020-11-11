@@ -1,16 +1,6 @@
-* {
-  font-family: 'Press Start 2P', cursive;
-}
-
-h1 { font-family: 'Press Start 2P', cursive;
-}
-
-p { font-family: 'Press Start 2P', cursive;
-}
-
-
 p {
 column-count: 3;
+
 }
 
 
@@ -18,6 +8,8 @@ body {
 background-image: url("mt.jpg");
 background-size: 500px 500px;
 opacity: 0.6;
+transition: 2s;
+transition-timing-function: ease-in-out;
 }
 
  img {
@@ -38,7 +30,13 @@ img {
      filter: drop-shadow(8px 8px 10px gray);
      filter: sepia(500%);
      box-shadow: 10px 10px;
+     transition: 4s;
+     transition-duration: 2s;
    }
+
+   p:nth-child(even) {color: yellow; }
+
+   p:first-line {color: snow; }
 
 header {
   padding-top: 100px;
